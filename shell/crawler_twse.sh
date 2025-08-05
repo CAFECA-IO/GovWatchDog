@@ -13,7 +13,7 @@ end_date="20250802"
 # 讀取下載記錄決定下載起始點（macOS）
 if [ -f "$record_file" ]; then
     last_download=$(cat "$record_file")
-    start_date=$(date -j -f "%Y%m%d" "$last_download" -v+1d "+%Y%m%d")
+    start_date=$last_download
     echo "從上次下載的下一天繼續：$start_date"
 else
     start_date=$default_start
