@@ -2,8 +2,8 @@
 
 # 自臺灣證券交易所下載每日收盤行情
 
-record_file=".last_downloaded"
 data_folder="twse_data"
+record_file="${data_folder}/.last_downloaded"
 mkdir -p "$data_folder"
 
 # 預設起始與結束日期
